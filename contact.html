@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CONTACT</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+  <header class="site-header">
+    <div class="site-title">モチモチ屋さん</div>
+    <input type="checkbox" id="navBtn">  
+    <label for="navBtn" class="open"><span></span></label>
+
+    <nav>
+      <ul>
+        <li><a href="top.html">ＡＢＯＵＴ</a></li>
+        <li><a href="works.html">ＷＯＲＫＳ</a></li>
+        <li><a href="fanart.html">ＦＡＮＡＲＴ</a></li>
+        <li><a href="contact.html">ＣＯＮＴＡＣＴ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="margin-bottom-6rem"></div>
+
+    <section class="hero">
+    <p><h1>ＣＯＮＴＡＣＴ</h1></p>
+      <div class="margin-bottom-3rem"></div>
+    <p>何かございましたら、下記のフォームかメールアドレスにご連絡ください。</p>
+  </section>
+  <div class="margin-bottom-3rem"></div>
+
+    <div class="margin-bottom-3rem"></div>
+    <div class="margin-bottom-3rem"></div>
+
+  <div class="contact-window">
+    <div class="title-bar">
+      <span>お問い合わせフォーム</span>
+      <div class="window-icons">
+        <button class="icon-btn">🗕</button>
+        <button class="icon-btn">🗖</button>
+        <button class="icon-btn close-btn">✕</button>
+      </div>
+    </div>
+
+    <div class="contact-content">
+      <form id="contact-form">
+        <label for="name">お名前：</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">メールアドレス：</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">お問い合わせ内容：</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <div class="button-box">
+          <button type="submit">送信</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // バツボタンでウィンドウを閉じる（実際は隠すだけ）
+    document.querySelector('.close-btn').addEventListener('click', () => {
+      document.querySelector('.contact-window').style.display = 'none';
+    });
+
+    // ダミー送信動作
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('送信完了しました！(ダミー)');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

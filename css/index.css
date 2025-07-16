@@ -1,0 +1,123 @@
+body {
+  cursor: url(images/cursor.cur), auto ;
+  margin: 0;
+  padding: 0;
+  background-color: #d274a9;
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.login-window {
+  width: 600px;
+  margin: 150px auto;
+  border: 2px solid #a7a7d2;
+  background-color: #cdd4e5;
+  box-shadow: 4px 4px 0px #888;
+}
+
+.title-bar {
+  background-color: #d274a9;
+  color: white;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.migiue {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.close-btn {
+  background-color: #f2d7e2;
+  border: 1px solid #888;
+  font-weight: bold;
+  cursor: default;
+}
+
+.content {
+  padding: 20px;
+  position: relative;
+  color: #333;
+}
+
+.icon {
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin-right: 15px;
+  image-rendering: pixelated;
+  mix-blend-mode: color-burn;
+}
+
+.content p {
+  margin: 0;
+  padding-top: 5px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.nyuryoku {
+  padding-left: 65px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 250px;
+  padding: 3px;
+  border: 2px solid #888;
+  font-family: "DotGothic16", sans-serif;
+  background-color: #e9eef6;
+  box-shadow: inset 2px 2px 0px #d0d0d0, inset -2px -2px 0px #666;
+}
+
+.buttons {
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "DotGothic16", sans-serif;
+}
+
+.ok-btn,
+.cancel-btn {
+  font-family: "DotGothic16", sans-serif;
+  width: 90px;
+  height: 28px;
+  background-color: #d7dce6;
+  border: 1px solid #777;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #555;
+}
+
+.margin-top-1rem {
+  margin-top: 1rem;
+  }
+
+.margin-top-2rem {
+  margin-top: 2rem;
+  }
+
+  /* レスポンシブ */
+@media (min-width: 768px) {
+  .site-nav a {
+    font-size: 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .window {
+    max-width: 700px;
+    margin: 30px auto;
+  }
+}
